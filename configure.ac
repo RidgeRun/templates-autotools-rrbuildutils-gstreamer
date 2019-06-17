@@ -26,6 +26,9 @@ dnl required version of libtool
 LT_PREREQ([2.2.6])
 LT_INIT
 
+RR_ENABLE_TESTS
+RR_ENABLE_EXAMPLES
+
 dnl give error and exit if we don't have pkgconfig
 AC_CHECK_PROG(HAVE_PKGCONFIG, pkg-config, [ ], [
   AC_MSG_ERROR([You need to have pkg-config installed!])
@@ -89,5 +92,9 @@ AC_CONFIG_FILES([
   ext/Makefile 
   ext/TODO/Makefile 
   gst-libs/Makefile
+  gst-libs/gst/Makefile
+  tests/Makefile
+  tests/check/Makefile
+  tests/examples/Makefile
 ])
 AC_OUTPUT

@@ -1,30 +1,20 @@
 #
 # Copyright (C) 201x RidgeRun, LLC (http://www.ridgerun.com)
 # All Rights Reserved.
-#
+# 
 # The contents of this software are proprietary and confidential to RidgeRun,
 # LLC.  No part of this program may be photocopied, reproduced or translated
-# into another programming language without prior written consent of
+# into another programming language without prior written consent of 
 # RidgeRun, LLC.  The user is free to modify the source code after obtaining
 # a software license from RidgeRun.  All source code changes must be provided
 # back to RidgeRun without any encumbrance.
 #
 
-ALWAYS_SUBDIRS = \
-        gst-libs \
-	ext      \
-        tests    
+EXAMPLE=example
+noinst_PROGRAMS=$(EXAMPLE)
 
-SUBDIRS =        \
-	gst-libs \
-	ext
+AM_CPPFLAGS=$(GST_CFLAGS)
+AM_LDFLAGS=$(GST_LIBS)
 
-if ENABLE_TESTS
-SUBDIRS += tests
-endif
-
-DIST_SUBDIRS = $(ALWAYS_SUBDIRS)
-
-ACLOCAL_AMFLAGS = -I m4 -I common/m4
-
-EXTRA_DIST = autogen.sh
+example_SOURCES = 		\
+	example.cpp
