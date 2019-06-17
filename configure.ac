@@ -13,7 +13,7 @@ AC_CONFIG_HEADERS([config.h])
 
 dnl required version of automake
 AM_INIT_AUTOMAKE([1.10 foreign subdir-objects])
-AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_MACRO_DIRS([m4 common/m4])
 
 dnl enable mainainer mode by default
 AM_MAINTAINER_MODE([enable])
@@ -21,6 +21,7 @@ AM_MAINTAINER_MODE([enable])
 dnl check for tools (compiler etc.)
 AC_PROG_CC
 AM_PROG_CC_C_O
+AC_PROG_CXX
 
 dnl required version of libtool
 LT_PREREQ([2.2.6])
