@@ -1,3 +1,3 @@
 EXTRA_DIST = autogen.sh
 
-ACLOCAL_AMFLAGS = -I m4
+ACLOCAL_AMFLAGS = -I common/m4
