@@ -25,6 +25,6 @@ endif
 
 DIST_SUBDIRS = $(ALWAYS_SUBDIRS)
 
-ACLOCAL_AMFLAGS = -I m4 -I common/m4
+ACLOCAL_AMFLAGS = -I common/m4
 
 EXTRA_DIST = autogen.sh

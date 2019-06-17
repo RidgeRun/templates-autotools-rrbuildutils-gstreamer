@@ -13,7 +13,7 @@ AC_CONFIG_HEADERS([config.h])
 
 dnl required version of automake
 AM_INIT_AUTOMAKE([1.10 foreign subdir-objects])
-AC_CONFIG_MACRO_DIRS([m4 common/m4])
+AC_CONFIG_MACRO_DIRS([common/m4])
 
 dnl enable mainainer mode by default
 AM_MAINTAINER_MODE([enable])
