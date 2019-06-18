@@ -1,5 +1,5 @@
 #
-# Copyright (C) <FIXME:YEAR> RidgeRun, LLC (http://www.ridgerun.com)
+# Copyright (C) <TODO:YEAR> RidgeRun, LLC (http://www.ridgerun.com)
 # All Rights Reserved.
 # 
 # The contents of this software are proprietary and confidential to RidgeRun,
@@ -9,16 +9,12 @@
 # a software license from RidgeRun.  All source code changes must be provided
 # back to RidgeRun without any encumbrance.
 #
-ALWAYS_SUBDIRS = check examples 
 
-SUBDIRS = 
+EXAMPLE=example
+noinst_PROGRAMS=$(EXAMPLE)
 
-if ENABLE_TESTS
-SUBDIRS += check
-endif
+AM_CPPFLAGS=$(GST_CFLAGS)
+AM_LDFLAGS=$(GST_LIBS)
 
-if ENABLE_EXAMPLES
-SUBDIRS += examples
-endif
-
-DIST_SUBDIRS = $(ALWAYS_SUBDIRS)
+example_SOURCES = 		\
+	example.cpp
