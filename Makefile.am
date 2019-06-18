@@ -1,5 +1,5 @@
 #
-# Copyright (C) 201x RidgeRun, LLC (http://www.ridgerun.com)
+# Copyright (C) <TODO:YEAR> RidgeRun, LLC (http://www.ridgerun.com)
 # All Rights Reserved.
 #
 # The contents of this software are proprietary and confidential to RidgeRun,
@@ -11,7 +11,7 @@
 #
 
 ALWAYS_SUBDIRS = \
-        gst-libs \ 
+	gst-libs \
 	ext 	 \
  	tests
 
