@@ -21,10 +21,13 @@ AM_MAINTAINER_MODE([enable])
 dnl check for tools (compiler etc.)
 AC_PROG_CC
 AM_PROG_CC_C_O
+AC_PROG_CXX 
 
 dnl required version of libtool
 LT_PREREQ([2.2.6])
 LT_INIT
+
+RR_ENABLE_TESTS
 
 dnl give error and exit if we don't have pkgconfig
 AC_CHECK_PROG(HAVE_PKGCONFIG, pkg-config, [ ], [
@@ -91,5 +94,7 @@ AC_CONFIG_FILES([
   gst-libs/gst/TODO/Makefile
   ext/Makefile
   ext/TODO/Makefile
+  tests/Makefile
+  tests/check/Makefile
 ])
 AC_OUTPUT
