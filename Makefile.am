@@ -11,10 +11,12 @@
 #
 
 ALWAYS_SUBDIRS = \
-        gst-libs 
+        gst-libs \ 
+	ext
 
 SUBDIRS =        \
-	gst-libs 
+	gst-libs \
+	ext
 
 DIST_SUBDIRS = $(ALWAYS_SUBDIRS)
 

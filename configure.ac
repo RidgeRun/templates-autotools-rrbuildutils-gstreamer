@@ -8,7 +8,7 @@ dnl required versions of gstreamer and plugins-base
 GST_REQUIRED=1.0.0
 GSTPB_REQUIRED=1.0.0
 
-AC_CONFIG_SRCDIR([])
+AC_CONFIG_SRCDIR([ext/TODO/gstTODO.c])
 AC_CONFIG_HEADERS([config.h])
 
 dnl required version of automake
@@ -89,5 +89,7 @@ AC_CONFIG_FILES([
   gst-libs/Makefile
   gst-libs/gst/Makefile
   gst-libs/gst/TODO/Makefile
+  ext/Makefile
+  ext/TODO/Makefile
 ])
 AC_OUTPUT
